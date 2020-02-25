@@ -6,7 +6,7 @@ def load_library(path)
   YAML.load_file(path).each do |meaning, emoticons|
     eng, jap = emoticons
     emotes["get_meaning"][jap] = meaning
-    emotes["get_emoticons"][eng] = jap
+    emotes["get_emoticon"][eng] = jap
   end
   emotes
 end

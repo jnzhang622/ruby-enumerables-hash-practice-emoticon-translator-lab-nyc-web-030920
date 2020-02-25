@@ -6,6 +6,7 @@ def load_library(file)
   YAML.load_file(file).each do |meaning, emoticons|
     eng, jap = emoticons
     emotes["get_meaning"]
+  end
 end
 
 def get_japanese_emoticon
